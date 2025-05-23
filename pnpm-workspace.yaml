@@ -1,0 +1,56 @@
+packages:
+  - apps/*
+  - packages/*
+catalog:
+  "@eslint/js": ^9.28.0
+  "@mjackson/node-fetch-server": ^0.6.1
+  "@netlify/functions": ^4.0.0
+  "@next/eslint-plugin-next": ^15.3.3
+  "@react-router/dev": ^7.6.1
+  "@react-router/node": ^7.6.1
+  "@tailwindcss/vite": ^4.1.8
+  "@types/express": ^5.0.2
+  "@tauri-apps/api": ^2.5.0
+  "@tauri-apps/cli": ^2.5.0
+  "@tauri-apps/plugin-opener": ^2.2.7
+  "@types/react-dom": ^19.1.5
+  "@types/react": ^19.1.6
+  "@vitejs/plugin-react": ^4.5.0
+  cross-env: ^7.0.3
+  eslint-config-prettier: ^10.1.5
+  eslint-plugin-only-warn: ^1.1.0
+  eslint-plugin-react-hooks: ^5.2.0
+  eslint-plugin-react: ^7.37.5
+  eslint-plugin-turbo: ^2.5.4
+  eslint: ^9.28.0
+  express: ^5.1.0
+  globals: ^16.2.0
+  husky: ^9.1.7
+  isbot: ^5.1.28
+  lint-staged: ^16.1.0
+  netlify-cli: ^21.5.0
+  npm-run-all2: ^8.0.4
+  prettier-plugin-sort-package-json: ^1.0.1
+  prettier: ^3.5.3
+  react-dom: ^19.1.0
+  react-router: ^7.6.1
+  react: ^19.1.0
+  stylelint: ^16.20.0
+  stylelint-config-standard: ^38.0.0
+  stylelint-config-tailwindcss: ^1.0.0
+  stylelint-selector-bem-pattern: ^4.0.1
+  tailwindcss: ^4.1.8
+  turbo: ^2.5.4
+  typescript-eslint: ^8.33.0
+  typescript: ^5.8.3
+  vite: ^6.3.5
+onlyBuiltDependencies:
+  - "@parcel/watcher"
+  - "@tailwindcss/oxide"
+  - esbuild
+  - netlify-cli
+  - sharp
+  - unix-dgram
+peerDependencyRules:
+  allowAny:
+    - "@types/express"

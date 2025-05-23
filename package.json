@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "name": "postrock-monorepo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sierkje/postrock.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "app:build": "turbo run app#build",
+    "app:dev": "turbo run app#dev",
+    "app:preview": "turbo run app#preview",
+    "format": "prettier --write --list-different .",
+    "lint": "turbo run lint",
+    "prepare": "husky",
+    "typecheck": "turbo run typecheck",
+    "web:build": "turbo run website#build",
+    "web:dev": "turbo run website#dev"
+  },
+  "packageManager": "pnpm@10.11.1",
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=10.0.0"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-sort-package-json"
+    ]
+  },
+  "devDependencies": {
+    "husky": "catalog:",
+    "lint-staged": "catalog:",
+    "prettier": "catalog:",
+    "prettier-plugin-sort-package-json": "catalog:",
+    "turbo": "catalog:"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,html,css,md,json,yml,yaml}": "prettier --write"
+  }
+}
